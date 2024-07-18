@@ -12,7 +12,7 @@ import astropy.units as u
 import pysynphot as pys
 import numpy as np
 
-u.magnitude_zero_points.enable()
+#u.magnitude_zero_points.enable()
 
 class JsonUnit(object):
     """

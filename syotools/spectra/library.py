@@ -20,10 +20,13 @@ except ImportError:
 
 import astropy.units as u
 import pysynphot as pys
-from specutils.io.read_fits import read_fits_spectrum1d as read_fits
+#from specutils.io.read_fits import read_fits_spectrum1d as read_fits
 import specutils as specu
 
 from syotools.defaults import default_spectra
+
+def read_fits(fn, **kwargs):
+    specu.Spectrum1Dread(fn, **kwargs)
 
 class _spec_library(object):
     """
